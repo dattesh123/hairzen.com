@@ -1,0 +1,363 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+   
+    font-family: sans-serif;
+}
+
+body{
+    background-color: burlywood;
+    overflow-x: hidden;
+}
+
+
+#banner{
+    width: 500px;
+    height: 100vh;
+    background-image: url("hairstyle1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 770px;
+    top: 90px;
+border: none;
+  
+}
+img{
+    width: 130px;
+
+ cursor: pointer;
+ position: relative;
+ left: 12px;
+ top: -10px;
+
+}
+#navbar{
+    width: 95%;
+    margin: 0;
+    padding: 10px  0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navbar ul li {
+    list-style: none;
+    display: inline-block ;
+    margin: 20px 20px;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+
+}
+#navbar ul li:hover::after{
+    width: 100%;
+}
+#heading1{
+
+    color: rgb(246, 17, 17);
+     transform: translate(70px,50px); 
+   animation: move 5s linear   forwards;
+
+}
+@keyframes move {
+    from {
+       transform: translate(-500px);
+    }
+    to{
+     transform: translate(90px);
+    }
+}
+
+#hairfall img{
+   width:400px;
+   height: 400px;
+   animation: move2 5s linear  5s forwards;
+   opacity: 0;
+}
+@keyframes move2 {
+    from{
+    transform: translate(-500px,13px);
+   opacity: 1;
+    }
+    to{
+    transform: translate(100px,13px);
+opacity: 1;
+    }
+}
+
+#hairfallstate{
+    text-transform: uppercase;
+    color: blue;
+    animation: move3 5s linear 11s  forwards;
+    opacity: 0;
+}
+@keyframes move3 {
+    from{
+    transform: translatex(-500px);
+   color: darkred;
+   opacity: 1;
+    }
+    to{
+    transform: translatex(50px);
+  color: blue;
+  opacity: 1;
+    }
+}
+#arrow{
+    font-size: 100px;
+    font-weight: bold;
+position: absolute;
+left: 600px;
+top: 400px;
+color: indianred;
+animation: move5 1s linear 17s infinite;
+opacity: 0;
+}
+@keyframes move5 {
+    from {
+transform: translatex(10px);
+opacity: 1;
+    }
+    to{
+transform: translatex(60px);
+opacity: 1;
+    }
+}
+ #heading2{
+    text-transform: uppercase;
+    color: white;
+   position: absolute;
+   top: 650px;
+   left: 500px;
+   animation: move6 10s linear 19s forwards;
+opacity: 0;
+ }
+ @keyframes move6 {
+    
+from{
+transform: translatex(-900px);
+color: chartreuse;
+opacity: 1;
+}
+to{
+transform: translatex(25px);
+color: ghostwhite;
+opacity: 1;
+}
+
+
+
+ }
+ #img2 img{
+    width: 650px;
+    height: 300px;
+    border-radius: 5px;
+    transform: translate(370px,150px);
+    animation: move7 8s linear 28s forwards;
+    opacity: 0;
+ }
+ @keyframes move7 {
+    from{
+     transform: translate(-1000px,150px);
+     opacity: 1;
+    }
+    to{
+    transform: translate(370px,150px);
+    opacity: 1;
+    }
+ }
+ #button{
+    width: 90px;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 25px;
+  border-radius: 10px;
+ padding-left: 3px;
+ padding-top: 3px;
+ padding-bottom: 3px;
+ padding-right: 2px;
+  background-color: red;
+transform: translate(657px,145px);
+animation: button1 5s linear 39s forwards; 
+  opacity: 0;
+ }
+
+@keyframes button1 {
+    from{
+      opacity: 0;
+    }
+    to{
+     opacity: 1;
+    }
+}
+
+
+
+
+#then{
+    display: inline;
+}
+#arrownew{
+    display: inline;
+    font-size: 30px;
+    font-weight: bold;
+}
+#Telegram{
+    width: 550px;
+    border: 2px solid white;
+   transform: translate(430px,160px);
+    font-weight: bold;
+    font-size: 30px;
+    padding: 7px;
+    background-color: black;
+    color: white;
+    animation: join 5s linear 44s forwards; 
+    opacity: 0;
+}
+@keyframes join {
+    from{
+  opacity: 0;
+    }
+    to{
+opacity: 1;
+    }
+}
+#listoffeatures{
+
+width: 920px;
+font-weight: bold;
+font-size: 25px;
+/* border: 2px solid white; */
+transform: translate(260px,200px);
+color: white;
+animation: list 5s linear 47s forwards; 
+opacity: 0;
+}
+@keyframes list {
+    from{
+  opacity: 0;
+    }
+    to{
+opacity: 1;
+    }
+}
+#head1{
+    display: inline;
+}
+#head2{
+   color: blue;
+}
+#head3{
+    color: blue;
+}
+
+#img3 img{
+width: 600px;
+height: 300px;
+
+transform: translate(370px,250px);
+animation: move10 8s linear 53s forwards; 
+opacity: 0;
+
+
+
+
+
+}
+@keyframes move10 {
+    from{
+transform: translate(-1000px,250px);
+opacity: 1;
+    }
+    to{
+transform: translate(370px,250px);
+opacity: 1;
+    }
+}
+#tag1{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translate(17px,280px);
+    animation:move11 8s linear 56s forwards; 
+    opacity: 0;
+}
+@keyframes move11 {
+    from{
+     opacity: 0;
+    }
+    to{
+opacity: 1;
+
+    }
+}
+#address{
+
+color: white;
+font-size: 25px;
+transform: translate(190px,330px);
+animation:move12 8s linear 56s forwards; 
+opacity: 0;
+}
+@keyframes move12 {
+    from{
+     opacity: 0;
+    }
+    to{
+opacity: 1;
+
+    }
+}
+.money{
+    color: mediumblue;
+    font-weight: bold;
+    font-size: 27px;
+}
+#buy{
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: yellow;
+    border-radius: 7px;
+    border: none;
+    transform: translate(400px,-55px);
+}
+
+#arrow3{
+    width: 70px;
+  color: red;
+    font-size: 60px;
+    font-weight: bold;
+ transform: translate(200px,-118px);
+ animation:move13 2s linear  infinite;
+}
+@keyframes move13 {
+    from{
+        transform: translate(250px,-118px);
+    }
+    to{
+    transform: translate(335px,-118px);
+    }
+}
+#footer1{
+   transform: translatex(380px);
+   font-size: 17px;
+}
